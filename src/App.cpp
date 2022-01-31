@@ -1,6 +1,7 @@
 #include "./App.hpp"
 #include "./Console/Console.hpp"
 using namespace v8;
+using namespace Console;
 
 void App::Start(int argc, char *argv[])
 {
@@ -14,7 +15,7 @@ void App::Start(int argc, char *argv[])
 
 		Context::Scope contextscope(context);
 		this->CreateGlobalObject("console")
-			.SetPropertyMethod("WriteLine", Console::WriteLine)
+			.SetPropertyMethod("log", WriteLine)
 			.Register();
 		
 		this->RunJsFromFile(filename);
