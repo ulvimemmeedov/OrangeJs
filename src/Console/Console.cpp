@@ -1,6 +1,7 @@
 #include "Console.hpp"
 using namespace v8;
-static void Console::Write(const FunctionCallbackInfo<Value> &args)
+
+void Console::Write(const FunctionCallbackInfo<Value> &args)
 {
 	HandleScope scope(args.GetIsolate());
 
@@ -12,7 +13,7 @@ static void Console::Write(const FunctionCallbackInfo<Value> &args)
 	fprintf(stdout);
 	fflush(stdout);
 }
-static void Console::WriteLine(const FunctionCallbackInfo<Value> &args)
+void Console::WriteLine(const FunctionCallbackInfo<Value> &args)
 {
 	HandleScope scope(args.GetIsolate());
 
