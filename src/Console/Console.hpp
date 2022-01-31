@@ -1,4 +1,4 @@
-#include "App.hpp"
+#include "../App.hpp"
 #ifndef CONSOLE
 #define CONSOLE
 
