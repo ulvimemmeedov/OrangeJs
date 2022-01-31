@@ -11,7 +11,7 @@ define INCLUDE
 endef
 
 define APP
-	src/*.cpp
+	./src/*.cpp
 endef
 
 define LIB
@@ -28,4 +28,4 @@ export LIB
 export OBJ
 
 build:
-	$(CXX) -I $$INCLUDE $$APP -L $$LIB -l $$OBJ -std=c++0x -pthread -o orange
+	$(CXX) $$INCLUDE $$APP -L $$LIB -l $$OBJ -std=c++0x -pthread -o orange
