@@ -6,7 +6,7 @@ Orange Js is an open-source, cross-platform, JavaScript runtime environment, bui
 
 ```JavaScript
 // app.js
-Console.WriteLine("Hello, World");
+console.log("Hello, World");
 ```
 ## Run
 ```bash

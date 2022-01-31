@@ -1,1 +1,1 @@
-Console.Write("a");
+console.log("a");
