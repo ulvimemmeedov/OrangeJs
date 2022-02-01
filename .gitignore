@@ -2,3 +2,5 @@
 orange
 .vscode
 .idea
+./*.js
+App.js

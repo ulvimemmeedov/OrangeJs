@@ -16,7 +16,7 @@ void App::Start(int argc, char *argv[])
 	
 		Context::Scope contextscope(context);
 		this->CreateGlobalObject("console")
-			.SetPropertyMethod("write", Log)
+			.SetPropertyMethod("writeLine", Log)
 			.Register();
 		this->RunJsFromFile(filename);
 	}
