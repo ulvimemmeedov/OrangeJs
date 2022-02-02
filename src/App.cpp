@@ -11,24 +11,14 @@ void App::Start(int argc, char *argv[])
 	{
 
 		const char *filename = argv[i];
-<<<<<<< HEAD
-		
-		Local<Context> context = this->CreateLocalContext();
-	
-		Context::Scope contextscope(context);
-		this->CreateGlobalObject("console")
-			.SetPropertyMethod("writeLine", Log)
-			.Register();
-=======
 
 		Local<Context> context = this->CreateLocalContext();
 
 		Context::Scope contextscope(context);
 		this->CreateGlobalObject("console")
-			.SetPropertyMethod("log", WriteLine)
+			.SetPropertyMethod("log", Log)
 			.Register();
 		
->>>>>>> 0665f8382d43c075ddea6093463fbd07ae79df23
-		this->RunJsFromFile(filename);
+                this->RunJsFromFile(filename);
 	}
 }
