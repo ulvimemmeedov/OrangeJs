@@ -1,4 +1,4 @@
-#include "../src/App.hpp"
+#include "../src/main.hpp"
 
 using v8::HandleScope;
 
