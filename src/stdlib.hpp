@@ -1,4 +1,4 @@
-#include "../main.hpp"
+#include "main.hpp"
 #ifndef STDLIB
 #define STDLIB
 #include "math.h"
