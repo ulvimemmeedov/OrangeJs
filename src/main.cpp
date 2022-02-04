@@ -1,5 +1,5 @@
 #include "./main.hpp"
-#include "./console/console.hpp"
+#include "console.hpp"
 using namespace v8;
 using namespace Console;
 using namespace Stdlib;
