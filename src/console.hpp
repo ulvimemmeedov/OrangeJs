@@ -1,4 +1,4 @@
-#include "./App.hpp"
+#include "./main.hpp"
 #ifndef CONSOLE
 #define CONSOLE
 using namespace v8;
