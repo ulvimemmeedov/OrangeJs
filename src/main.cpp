@@ -2,7 +2,7 @@
 #include "./console/console.hpp"
 using namespace v8;
 using namespace Console;
-
+using namespace Stdlib;
 void App::Start(int argc, char *argv[])
 {
 
@@ -15,9 +15,9 @@ void App::Start(int argc, char *argv[])
 
 		Context::Scope contextscope(context);
 		this->CreateGlobalObject("console")
-			.SetPropertyMethod("log", WriteLine)
+			.SetPropertyMethod("log", Log)
 			.Register();
 		
-		this->RunJsFromFile(filename);
+                this->RunJsFromFile(filename);
 	}
 }
