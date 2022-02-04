@@ -1,5 +1,5 @@
-#include "./App.hpp"
-#include "./Console/Console.hpp"
+#include "./main.hpp"
+#include "./console/console.hpp"
 using namespace v8;
 using namespace Console;
 
